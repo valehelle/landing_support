@@ -42,7 +42,7 @@
 			  <hr class="star-light">
 				<span class="skills">Enhance your customer support by adding ticketing, tracking and performance rating on your Facebook Messenger. </span>
 				<div class="col-lg-8 mx-auto text-center">
-					<a href="#" class="btn btn-lg btn-outline" id = "pricing">
+					<a href="/about.html" class="btn btn-lg btn-outline">
 					  Plans and Pricing
 					</a>
 				</div>
@@ -73,124 +73,6 @@
 			</div>
 		  </div>
 		</section>
-	</div>
-	<style>
-		.pricing-section-free .pricing-section-top {
-			background: #298fca;
-		}
-		.pricing-section-bc .pricing-section-top {
-			background: #42548e;
-		}
-		.pricing-section-enterprise .pricing-section-top {
-			background: #36405f;
-		}
-		.pricing-section-top {
-			color: white;
-			padding: 1em;
-			border-radius: 6px 6px 0 0;
-		}	
-		.pricing-section-item-description {
-			opacity: .5;
-		}
-		.pricing-section-quiet {
-			opacity: .5;
-			margin-bottom: 1em;
-		}
-		.pricing-section-item {
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			display: inline-block;
-			padding: 0 .5em;
-			vertical-align: top;
-		}
-		.pricing-section {
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			display: inline-block;
-			max-width: 450px;
-			vertical-align: top;
-			width: 100%;
-		}
-		.u-center-text {
-			text-align: center;
-		}
-		.pricing-section-price {
-			font-size: 2em;
-			font-weight: bold;
-			margin: 0 auto;
-			display: block;
-		}
-		.pricing-section-bottom {
-			text-align: left;
-			border: 1px solid #d6dadc;
-			border-radius: 0 0 6px 6px;
-			border-top: none;
-			margin-bottom: 2em;
-		}
-		.pricing-section-list {
-			margin-top: 0;
-			padding: 1em 1em 0 2.25em;
-		}
-		.pricing-section-list span {
-			color: #8c8c8c;
-			left: 2px;
-			position: relative;
-		}
-		.pricing-section-list li {
-			padding: .5em 0;
-		}
-		li {
-			display: list-item;
-			text-align: -webkit-match-parent;
-		}
-	</style>
-	<div id = "pricing_page" style = "    padding-top: 170px;padding-bottom: 100px; ">
-		  <div class="container">
-		  <div class = "row">
-			<div class="u-center-text col-md-12"> 
-				<div class="pricing-section pricing-section-bc"> 
-					<div class="pricing-section-item"> 
-						<div class="pricing-section-top" > 
-						<h2 >Simple</h2> 
-							<p class="pricing-section-item-description" style="margin: 1.75em 1em 1em;"> First 2 user are free.</p> 
-							<span class="pricing-section-price" style="margin-bottom: 0.7em; display: block; "> RM30 </span> <p class="pricing-section-quiet"> per additional user<br>&nbsp; </p> 
-							<a href="#" class="btn btn-lg btn-outline" id="subscribe_button_medium">
-								Sign Up
-							</a>
-						</div> 
-						<div class="pricing-section-bottom"> 
-							<ul class="pricing-section-list"> 
-								<li><span>Ticketing.</span></li> 
-								<li><span>Tracking.</span></li>
-								<li><span>Performance Rating.</span></li>
-								<li><span>24/7 Support for paying customer.</span></li>
-							</ul> 
-						</div> 
-					</div> 
-				</div>
-			</div>
-
-		  </div>
-		  </div>
-	</div>
-	
-	
-	<div id = "subscribe_page" style = "    padding-top: 170px;padding-bottom: 100px; ">
-		  <div class="container">
-			  <div class = "row">
-				<div class = "col-md-12" style = "text-align:center;">
-					<h2 style = "text-transform: none; font-weight: 100;">Hello! You caught us before we are ready.</h2>
-					<h6 style = "text-transform: none; font-weight: 100; margin-top:100px;">We are working hard to put the finishing touches. Things are going well and it should be ready to help you with Facebook very soon. If you like us to send a reminder when we are ready, just put your email in below</h6>
-					<h4 style = "text-transform: none; font-weight: 100; margin-top:100px;" id = "thankyou">Thank You! We will notify you as soon as our product is ready!</h4>
-					<input type="email" name="firstname" placeholder="Your email" id = "email_input" style = "margin-top:100px;">
-					<br>
-
-					<a href="#" class="btn btn-lg" id="subscribe_button" style = "margin-top:20px;">
-								Remind me
-					</a>					
-				</div>
-			  </div>
-		  </div>
 	</div>
 	
 	
@@ -228,79 +110,10 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
-	<script>
-		$('#pricing_page').hide();
-		$('#subscribe_page').hide();
-		$('#thankyou').hide();
-		$('#pricing').click(function(){
-			$('#main_page').hide();
-			$('#pricing_page').show();
-			$('#subscribe_page').hide();
-			$('#thankyou').hide();
-		})
-		$('#home_button').click(function(){
-			$('#main_page').show();
-			$('#pricing_page').hide();
-			$('#subscribe_page').hide();
-			$('#thankyou').hide();
-		})
-		$('#subscribe_button').click(function(){
-			$('#subscribe_page').show();
-			$('#pricing_page').hide();
-			$('#main_page').hide();
-			$('#thankyou').hide();
-		})
-		$('#subscribe_button_small').click(function(){
-			$('#subscribe_page').show();
-			$('#pricing_page').hide();
-			$('#main_page').hide();
-			$('#thankyou').hide();
-		})
-		$('#subscribe_button_medium').click(function(){
-			$('#subscribe_page').show();
-			$('#pricing_page').hide();
-			$('#main_page').hide();
-			$('#thankyou').hide();
-		})
-		$('#subscribe_button_large').click(function(){
-			$('#subscribe_page').show();
-			$('#pricing_page').hide();
-			$('#main_page').hide();
-			$('#thankyou').hide();
-		})
-	</script>
 	
 	
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyADF8wHnegT29qbZL7qk2DGQYeG88zi4zQ",
-    authDomain: "landing-page-cae3e.firebaseapp.com",
-    databaseURL: "https://landing-page-cae3e.firebaseio.com",
-    projectId: "landing-page-cae3e",
-    storageBucket: "",
-    messagingSenderId: "47768679864"
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
-  var ref = database.ref('emails');
-	$('#subscribe_button').click(function(){
-		var email = $('#email_input').val();
-		if(email != '' && validateEmail(email)){
-		  var data = {
-			email: email,
-		  }
-			ref.push(data);
-			$('#email_input').val('');
-			$('#thankyou').show();
-		}
-	})
-function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-}
-</script>
+
   </body>
 
 </html>
