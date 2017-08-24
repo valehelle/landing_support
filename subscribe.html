@@ -41,14 +41,14 @@
       </div>
     </nav>
 	
-	<div id = "subscribe_page" style = "    padding-top: 170px;padding-bottom: 100px; ">
+	<div id = "subscribe_page" style = "    padding-top: 170px;padding-bottom: 100px; min-height:90vh;">
 		  <div class="container">
 			  <div class = "row">
 				<div class = "col-md-12" style = "text-align:center;">
 					<h2 style = "text-transform: none; font-weight: 100;">Hello! You caught us before we are ready.</h2>
-					<h6 style = "text-transform: none; font-weight: 100; margin-top:100px;">We are working hard to put the finishing touches. Things are going well and it should be ready to help you with Facebook very soon. If you like us to send a reminder when we are ready, just put your email in below</h6>
-					<h4 style = "text-transform: none; font-weight: 100; margin-top:100px;" id = "thankyou">Thank You! We will notify you as soon as our product is ready!</h4>
-					<input type="email" name="firstname" placeholder="Your email" id = "email_input" style = "margin-top:100px;">
+					<h6 style = "text-transform: none; font-weight: 100; margin-top:80px;">We are working hard to put the finishing touches. Things are going well and it should be ready to help you with Facebook customer very soon. If you like us to send a reminder when we are ready, just put your email in below</h6>
+					<h4 style = "text-transform: none; font-weight: 100; margin-top:80px;" id = "thankyou">Thank You! We will notify you as soon as our product is ready!</h4>
+					<input class = "col-md-4" type="email" name="firstname" placeholder="Your email" id = "email_input" style = "margin-top:50px;">
 					<br>
 
 					<a href="#" class="btn btn-lg" id="subscribe_button" style = "margin-top:20px;">
@@ -116,6 +116,7 @@
 		if(email != '' && validateEmail(email)){
 		  var data = {
 			email: email,
+      landing: 'social_helpdesk',
 		  }
 			ref.push(data);
 			$('#email_input').val('');
