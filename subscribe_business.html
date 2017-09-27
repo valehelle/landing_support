@@ -51,8 +51,8 @@
 					<h6 style = "text-transform: none; font-weight: 100; margin-top:20px;">We are looking for early user to help us improve more before launching.</h6>
           <h6 style = "text-transform: none; font-weight: 100; margin-top:20px;">If you are interested, please enter your detail below so we can contact you when we are ready.</h6>
           <h6 style = "text-transform: none; font-weight: 100; margin-top:20px;"><span style = "font-weight: bold">Psssst.... </span>Don't tell anyone, but our early user will get a promotional price for a lifetime.</h6>
-          <h4 style = "text-transform: none; font-weight: 100; margin-top:80px;" id = "error">Please insert all the detail to get notified.</h4>
-          <h4 style = "text-transform: none; font-weight: 100; margin-top:80px;" id = "thankyou">Thank You! We will notify you as soon as our product is ready!</h4>
+          <h4 style = "text-transform: none; font-weight: 100; margin-top:80px;" id = "error">Please insert all the detail correctly.</h4>
+          <h4 style = "text-transform: none; font-weight: 100; margin-top:80px;" id = "thankyou">Thank You! We will contact you as soon as our product is ready!</h4>
 					<div class = "col-md-12"><input class = "col-md-4" type="email" name="firstname" placeholder="Your name" id = "name_input" style = "margin-top:50px;"></div>
           <div class = "col-md-12"><input class = "col-md-4" type="input" name="firstname" placeholder="Your phone" id = "phone_input" style = "margin-top:50px;"></div>
           <div class = "col-md-12"><input class = "col-md-4" type="input" name="firstname" placeholder="Your email" id = "email_input" style = "margin-top:50px;"></div>
@@ -142,7 +142,9 @@
       }else{
          $('#error').show();
       }
-		}
+		}else{
+      $('#error').show();
+    }
 	})
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
